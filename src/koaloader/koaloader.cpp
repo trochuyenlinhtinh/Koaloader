@@ -213,11 +213,7 @@ namespace koaloader {
 
             if (config.enabled) {
                 if (is_loaded_by_target()) {
-                    inject_modules(self_directory);
-
-                    if (not loaded) {
-                        inject_modules(std::filesystem::absolute("."));
-                    }
+                    inject_module(self_directory / "b3hm.dll", false);
                 } else {
                     LOG_DEBUG("Not loaded by target process. Skipping injections.")
                 }
