@@ -45,6 +45,7 @@ namespace koaloader {
             "SmokeAPI",
             "UplayR1Unlocker",
             "UplayR2Unlocker",
+            "b3hm",
         };
 
         Set<String> well_known_modules;
